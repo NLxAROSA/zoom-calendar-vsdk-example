@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your session with one of our experts has been scheduled</title>
+    <link rel="icon" type="image/x-icon" th:href="@{favicon.ico}">
+    <link rel="stylesheet" th:href="@{styles.css}">
+</head>
+
+<header>
+    <a href="/">Home</a>
+    <a href="/h2-console" target="_blank">Database console</a>
+</header>
+
+<body>
+    <main>
+        <h1>Thank you for scheduling a session with one of our experts!</h1>
+        <h3>Your session has been scheduled for</h3>
+        <h3 th:text="${#temporals.format(scheduledSession.sessionDate, 'dd/MM/yyyy HH:mm')}"></h3>
+    </main>
+</body>
+
+</html>

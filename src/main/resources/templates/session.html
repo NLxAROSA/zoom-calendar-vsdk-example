@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Meet with our expert: Lars</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" th:href="@{favicon.ico}">
+
+        <link rel="stylesheet" th:href="@{@zoom/videosdk-ui-toolkit/dist/videosdk-ui-toolkit.css}"/>
+        <link rel="stylesheet" th:href="@{styles.css}">
+    </head>
+    <body onload="getVideoSDKJWT()">
+        <main>        
+            <div id='sessionContainer'></div>
+        </main>
+        <script th:src="@{@zoom/videosdk-ui-toolkit/index.js}" type="module"></script>
+        <script th:src="@{scripts.js}" type="module"></script>
+    </body>
+</html>

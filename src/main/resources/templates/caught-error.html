@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oops! Something went wrong.</title>
+    <link rel="icon" type="image/x-icon" th:href="@{favicon.ico}">
+    <link rel="stylesheet" th:href="@{styles.css}">
+</head>
+
+<header>
+    <a href="/">Home</a>
+    <a href="/h2-console" target="_blank">Database console</a>
+</header>
+
+<body>
+    <main>
+        <h1>Oops! Something went wrong.</h1>
+        <h3 th:text="${errorMessage.errorMessage}"></h3>    
+    </main>
+</body>
+
+</html>

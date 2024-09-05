@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book a session with one of our experts</title>
+    <link rel="icon" type="image/x-icon" th:href="@{favicon.ico}">
+    <link rel="stylesheet" th:href="@{styles.css}">
+</head>
+
+<header>
+    <a href="/">Home</a>
+    <a href="/h2-console" target="_blank">Database console</a>
+</header>
+
+<body>
+    <main>
+        <h1>Book a session with one of our experts</h1>
+        <h2>Please enter details below</h2>
+        <form th:action="@{/scheduled}" method="post" th:object="${scheduledSession}">
+            <div>
+                <label for="schedule-date">Expert session date:</label>
+                <input type="datetime-local" th:field="${scheduledSession.sessionDate}" id="schedule-date" required />
+                <label for="schedule-attendee">Your email:</label>
+                <input type="email" th:field="${scheduledSession.attendeeEmail}" id="schedule-attendee" required />
+            </div>
+            <div>
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
