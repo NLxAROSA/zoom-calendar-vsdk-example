@@ -1,5 +1,9 @@
 # Scheduling a Zoom Video SDK session using the Zoom Calendar API
 A simple scheduling app with an in-memory database that uses the Zoom Calendar API to schedule Zoom Video SDK sessions and perform basic validations.
+The app consists of:
+- A scheduling backend + frontend (Java/Spring Boot/HTML)
+- A Video SDK frontend (Javascript), from [Zoom Video SDK UI Toolkit sample](https://github.com/zoom/videosdk-ui-toolkit-javascript-sample)
+- A Video SDK JWT endpoint (Java/Spring Boot), from [Video SDK Auth Endpoint example](https://github.com/NLxAROSA/zoom-vdsk-auth-endpoint)
 
 ## Prerequisites
 1. A Zoom account with Zoom Mail and Calendar activated so you have a calendar id (your @zmail.com address)

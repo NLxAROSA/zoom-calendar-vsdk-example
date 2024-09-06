@@ -34,3 +34,6 @@ build/
 
 ### Don't accidentally commit sensitive info ###
 .env
+
+### MacOS
+.DS_Store
